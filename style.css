@@ -131,6 +131,55 @@ nav{
 
 /* header styling ends */
 
+/* services styling starts */
+
+.services-grid{
+    margin-top: 2rem;
+    display: grid;
+    gap: 1rem;
+    /* background-color: aqua; */
+}
+
+.services-card{
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.services-card:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+}
+
+.services-card img{
+    margin-bottom: 1rem;
+    border-radius: 10px;
+}
+
+.services-card p{
+    margin-bottom: 1rem;
+    font-weight: 500;
+    color: var(--text-light);
+    font-family: var(--header-font);
+}
+
+.services-card h4{
+    margin-bottom: 1rem;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: var(--text-dark);
+}
+
+.services-card > div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+/* services styling ends */
+
 /* Gallery styling starts */
 
 .gallery-grid{
@@ -153,6 +202,9 @@ nav{
 /* ------------media queries---------------*/
 
 @media (width > 540px){
+    .services-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
     .gallery-grid{
         grid-template-columns: repeat(3, 1fr);
     }
@@ -193,6 +245,10 @@ nav{
   .nav-links .nav-logo img{
     max-width: 350px;
   }
+
+  .services-grid{
+        grid-template-columns: repeat(4, 1fr);
+    }
 
   .gallery-grid{
     grid-template-columns: repeat(4, 1fr);
