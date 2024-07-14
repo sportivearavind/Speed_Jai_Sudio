@@ -28,3 +28,8 @@ ScrollReveal().reveal(".nav-links li", {
     ...scrollRevealOption,
     interval: 200,
 });
+
+ScrollReveal().reveal(".test-card", {
+    ...scrollRevealOption,
+    interval: 200,
+});
