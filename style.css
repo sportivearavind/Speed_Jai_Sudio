@@ -317,6 +317,91 @@ nav{
 }
 
 /* Testimonials styling ends */
+
+/* Footer styling starts */
+
+footer{
+    background: linear-gradient(to right, #232526, #414345) ;
+    margin-top: 40px;
+    color: white;
+}
+
+.footer-container{
+    display: grid;
+    gap: 4rem 0;
+    align-items: center;
+    max-width: 1400px;
+}
+
+.footer-col{
+    padding: 2rem 2rem 2rem 2rem;
+}
+
+.footer-container img{
+    width: 150px;
+    margin-inline: auto;
+    margin-bottom: 2rem;
+}
+
+.footer-socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.footer-socials a{
+    font-size: 2rem;
+}
+
+.footer-links{
+    list-style: none;
+    text-decoration: none;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.5rem;
+}
+
+.footer-col:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-col h4{
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.footer-links li a{
+    color: white;
+    display: block;
+    text-align: center;
+}
+
+.footer-links li a:hover{
+    color: var(--extra-light);
+}
+
+.footer-col p{
+    color: lightgray;
+    line-height: 1.75rem;
+    text-align: center;
+}
+
+.footer-bar{
+    padding: 1rem;
+    text-align: center;
+    color: var(--extra-light);
+    background-color: white;
+}
+
+
+
+/* Footer styling ends */
  
 /* ------------media queries---------------*/
 
@@ -342,6 +427,15 @@ nav{
     .test-img {
         width: 80px;
         height: 80px;
+    }
+
+    .footer-container{
+        gap: 1rem 0;
+    }
+
+    .footer-col:nth-child(2), .footer-col:nth-child(3){
+        border-top: 1px dotted white ;
+        
     }
 }
  
@@ -388,6 +482,21 @@ nav{
   .gallery-grid{
     grid-template-columns: repeat(4, 1fr);
   }
+
+  .footer-container{
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .footer-col:nth-child(2), .footer-col:nth-child(3){
+    border-left: 1px dotted var(--white);
+    height: 10rem;
+  }
+
+  .footer-container img{
+        width: 250px;
+    }
 }
  
 @media (width > 1024px) {

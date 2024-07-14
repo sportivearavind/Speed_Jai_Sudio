@@ -19,6 +19,18 @@ const scrollRevealOption = {
     duration: 1000,
 };
 
+const scrollRevealOptionLeft = {
+    distance: "50px",
+    origin : "left",
+    duration: 1000,
+};
+
+const scrollRevealOptionRight = {
+    distance: "50px",
+    origin : "right",
+    duration: 1000,
+};
+
 ScrollReveal().reveal(".services-card", {
     ...scrollRevealOption,
     interval: 500,
@@ -32,4 +44,19 @@ ScrollReveal().reveal(".nav-links li", {
 ScrollReveal().reveal(".test-card", {
     ...scrollRevealOption,
     interval: 200,
+});
+
+ScrollReveal().reveal(".footer-col:nth-child(2)", {
+    ...scrollRevealOption,
+    interval: 200,
+});
+
+ScrollReveal().reveal(".footer-col:nth-child(1)", {
+  ...scrollRevealOptionLeft,
+  interval: 200,
+});
+
+ScrollReveal().reveal(".footer-col:nth-child(3)", {
+  ...scrollRevealOptionRight,
+  interval: 200,
 });
